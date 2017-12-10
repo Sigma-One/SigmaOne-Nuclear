@@ -7,7 +7,12 @@ table.insert(data.raw["recipe"]["uranium-processing"].results, {name = "empty-ba
 table.remove(data.raw["recipe"]["uranium-processing"].ingredients, 1)
 
 --Change Nuclear Power research to unlock Hexafluoride production
-table.insert(data.raw["technology"]["nuclear-power"].effects, {type = "unlock-recipe", recipe = "uranium-hexafluoride"})
+if data.raw["technology"]["uranium-processing"] then
+    -- Anti's Science: unlock via uranium-processing instead of nuclear-power (Big thanks to leoch!)
+    table.insert(data.raw["technology"]["uranium-processing"].effects, {type = "unlock-recipe", recipe = "uranium-hexafluoride"});
+else
+    table.insert(data.raw["technology"]["nuclear-power"].effects, {type = "unlock-recipe", recipe = "uranium-hexafluoride"});
+end
 
 --Change Reprocessing research to unlock MOX cell production
 table.insert(data.raw["technology"]["nuclear-fuel-reprocessing"].effects, {type = "unlock-recipe", recipe = "mox-fuel-cell"})
@@ -18,4 +23,3 @@ table.remove(data.raw["recipe"]["atomic-bomb"].ingredients, 3)
 
 --Remove Kovarex Enrichment Process (Sorry Kovarex!)
 data.raw["technology"]["kovarex-enrichment-process"] = nil
-
