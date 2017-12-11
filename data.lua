@@ -9,6 +9,8 @@ require("prototypes.resources.fluorine-ore")
 require("prototypes.autoplace-controls")
 require("prototypes.noise-layers")
 
+require("prototypes.achievements.better-than-uranium")
+
 require("data_raw_edits")
 
 
