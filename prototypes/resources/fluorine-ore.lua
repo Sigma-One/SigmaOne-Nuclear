@@ -1,8 +1,9 @@
 data:extend({
 	{
-	  type = "resource",
+	type = "resource",
     name = "fluorine-ore",
     icon = "__SigmaOne_Nuclear__/graphics/items/fluorine-ore.png",
+    icon_size = 32,
     flags = {"placeable-neutral"},
     order="a-b-e",
     minable =

@@ -3,6 +3,7 @@ data:extend({
     type = "item",
     name = "mox-fuel-cell",
     icon = "__SigmaOne_Nuclear__/graphics/items/mox-fuel-cell.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "r[uranium-fuel-cell]-a[mox-fuel-cell]",
