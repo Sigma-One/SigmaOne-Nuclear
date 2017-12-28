@@ -30,9 +30,13 @@ data:extend({
           noise_octaves_difference = -1.5,
           noise_persistence = 0.3,
         },
-      },
-      starting_area_size = 600 * 0.013,
-      starting_area_amount = 1500
+        {
+          influence = -1.0,
+          starting_area_weight_optimal = 1,
+          starting_area_weight_range = 0,
+          starting_area_weight_max_range = 2,
+        }
+      }
     },
     map_color = {r=242, g=170, b=233},
     stage_counts = {1000, 600, 400, 200, 100, 50, 20, 1},
