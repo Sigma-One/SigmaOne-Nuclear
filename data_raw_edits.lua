@@ -1,9 +1,9 @@
 --Change Reprocessing recipe to also output Plutonium
-table.insert(data.raw["recipe"]["nuclear-fuel-reprocessing"].results, {name = "plutonium-239", amount = 1})
+table.insert(data.raw["recipe"]["nuclear-fuel-reprocessing"].results, {name = "plutonium-239", amount = 0.7})
 
 --Change Enrichment recipe to use Uranium Hexafluoride instead of ore
-table.insert(data.raw["recipe"]["uranium-processing"].ingredients, {name = "uranium-hexafluoride-barrel", amount = 1})
-table.insert(data.raw["recipe"]["uranium-processing"].results, {name = "empty-barrel", amount = 1})
+table.insert(data.raw["recipe"]["uranium-processing"].ingredients, {name = "uranium-hexafluoride-barrel", amount = 5})
+table.insert(data.raw["recipe"]["uranium-processing"].results, {name = "empty-barrel", amount = 5})
 table.remove(data.raw["recipe"]["uranium-processing"].ingredients, 1)
 
 --Change Nuclear Power research to unlock Hexafluoride production

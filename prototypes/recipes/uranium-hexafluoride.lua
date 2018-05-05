@@ -20,7 +20,7 @@ data:extend({
     },
     results =
     {
-	{type="fluid", name="uranium-hexafluoride", amount=25},
-    }
+      {type="fluid", name="uranium-hexafluoride", amount=25},
+    },
   }
 })
