@@ -1,3 +1,7 @@
+require("prototypes.entities.rtg")
+require("prototypes.items.rtg")
+require("prototypes.recipes.rtg")
+
 require("prototypes.items.plutonium-239")
 require("prototypes.items.fluorine-ore")
 require("prototypes.items.mox-fuel-cell")
@@ -10,8 +14,8 @@ require("prototypes.autoplace-controls")
 require("prototypes.noise-layers")
 
 require("prototypes.achievements.better-than-uranium")
+require("prototypes.achievements.unlimited-power")
+
+require("prototypes.technologies.rtg")
 
 require("data_raw_edits")
-
-
-
